@@ -123,6 +123,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnexionBDD.vb" />
+    <Compile Include="FormCreerUtilisateur.Designer.vb">
+      <DependentUpon>FormCreerUtilisateur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormCreerUtilisateur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListeUtilisateurs.Designer.vb">
+      <DependentUpon>FormListeUtilisateurs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListeUtilisateurs.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -130,11 +142,24 @@
       <DependentUpon>FormLogin.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FormPrincipal.Designer.vb">
+      <DependentUpon>FormPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReinitialisationMdp.Designer.vb">
+      <DependentUpon>FormReinitialisationMdp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormReinitialisationMdp.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ModuleConfig.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -150,6 +175,9 @@
   <ItemGroup>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
