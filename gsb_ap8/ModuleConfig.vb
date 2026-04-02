@@ -82,9 +82,9 @@ Module ModuleConfig
     ''' </summary>
     Public Function GetConnectionString() As String
         Return String.Format(
-            "Server={0};Port={1};Database={2};Uid={3};Pwd={4};",
-            DbServer, DbPort, DbName, DbUser,
-            HashSHA256(DbPassword))
+        "Server={0};Port={1};Database={2};Uid={3};Pwd={4};",
+        DbServer, DbPort, DbName, DbUser,
+        DbPassword)
     End Function
 
 End Module

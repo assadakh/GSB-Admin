@@ -1,5 +1,9 @@
 ﻿Public Class FormPrincipal
 
+    Private Sub FormPrincipal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ChargerConfig()
+    End Sub
+
     Private Sub ListeDesUtilisateursToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ListeDesUtilisateursToolStripMenuItem.Click
         Dim frm As New FormListeUtilisateurs()
         frm.MdiParent = Me
@@ -17,4 +21,5 @@
         frm.MdiParent = Me
         frm.Show()
     End Sub
+
 End Class

@@ -27,6 +27,7 @@ Partial Class FormPrincipal
         Me.ListeDesUtilisateursToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RéiniToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CréerUnUtilisateurToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MySqlDataAdapter1 = New MySql.Data.MySqlClient.MySqlDataAdapter()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -64,6 +65,13 @@ Partial Class FormPrincipal
         Me.CréerUnUtilisateurToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
         Me.CréerUnUtilisateurToolStripMenuItem.Text = "Créer un utilisateur"
         '
+        'MySqlDataAdapter1
+        '
+        Me.MySqlDataAdapter1.DeleteCommand = Nothing
+        Me.MySqlDataAdapter1.InsertCommand = Nothing
+        Me.MySqlDataAdapter1.SelectCommand = Nothing
+        Me.MySqlDataAdapter1.UpdateCommand = Nothing
+        '
         'FormPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -87,4 +95,5 @@ Partial Class FormPrincipal
     Friend WithEvents ListeDesUtilisateursToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RéiniToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CréerUnUtilisateurToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MySqlDataAdapter1 As MySql.Data.MySqlClient.MySqlDataAdapter
 End Class
