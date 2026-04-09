@@ -22,41 +22,11 @@ Partial Class FormReinitialisationMdp
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lblUtilisateur = New System.Windows.Forms.Label()
-        Me.lblNouveauMdp = New System.Windows.Forms.Label()
-        Me.lblConfirmerMdp = New System.Windows.Forms.Label()
         Me.cmbUtilisateurs = New System.Windows.Forms.ComboBox()
         Me.txtNouveauMdp = New System.Windows.Forms.TextBox()
         Me.txtConfirmerMdp = New System.Windows.Forms.TextBox()
         Me.btnValider = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'lblUtilisateur
-        '
-        Me.lblUtilisateur.AutoSize = True
-        Me.lblUtilisateur.Location = New System.Drawing.Point(94, 48)
-        Me.lblUtilisateur.Name = "lblUtilisateur"
-        Me.lblUtilisateur.Size = New System.Drawing.Size(128, 13)
-        Me.lblUtilisateur.TabIndex = 0
-        Me.lblUtilisateur.Text = "Sélectionner un utilisateur"
-        '
-        'lblNouveauMdp
-        '
-        Me.lblNouveauMdp.AutoSize = True
-        Me.lblNouveauMdp.Location = New System.Drawing.Point(94, 135)
-        Me.lblNouveauMdp.Name = "lblNouveauMdp"
-        Me.lblNouveauMdp.Size = New System.Drawing.Size(117, 13)
-        Me.lblNouveauMdp.TabIndex = 1
-        Me.lblNouveauMdp.Text = "Nouveau mot de passe"
-        '
-        'lblConfirmerMdp
-        '
-        Me.lblConfirmerMdp.AutoSize = True
-        Me.lblConfirmerMdp.Location = New System.Drawing.Point(94, 238)
-        Me.lblConfirmerMdp.Name = "lblConfirmerMdp"
-        Me.lblConfirmerMdp.Size = New System.Drawing.Size(128, 13)
-        Me.lblConfirmerMdp.TabIndex = 2
-        Me.lblConfirmerMdp.Text = "Confirmer le mot de passe"
         '
         'cmbUtilisateurs
         '
@@ -99,19 +69,12 @@ Partial Class FormReinitialisationMdp
         Me.Controls.Add(Me.txtConfirmerMdp)
         Me.Controls.Add(Me.txtNouveauMdp)
         Me.Controls.Add(Me.cmbUtilisateurs)
-        Me.Controls.Add(Me.lblConfirmerMdp)
-        Me.Controls.Add(Me.lblNouveauMdp)
-        Me.Controls.Add(Me.lblUtilisateur)
         Me.Name = "FormReinitialisationMdp"
         Me.Text = "FormReinitialisationMdp"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lblUtilisateur As Label
-    Friend WithEvents lblNouveauMdp As Label
-    Friend WithEvents lblConfirmerMdp As Label
     Friend WithEvents cmbUtilisateurs As ComboBox
     Friend WithEvents txtNouveauMdp As TextBox
     Friend WithEvents txtConfirmerMdp As TextBox
