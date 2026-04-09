@@ -90,6 +90,7 @@ Public Class FormListeUtilisateurs
             table.Columns("login").ColumnName = "Login"
             table.Columns("role").ColumnName = "Rôle"
             dgvUtilisateurs.DataSource = table
+            dgvUtilisateurs.AllowUserToAddRows = False
         Catch ex As Exception
             MessageBox.Show("Erreur : " & ex.Message)
         End Try

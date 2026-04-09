@@ -40,7 +40,6 @@ Partial Class FormCreerUtilisateur
         Me.txtNom.Name = "txtNom"
         Me.txtNom.Size = New System.Drawing.Size(100, 20)
         Me.txtNom.TabIndex = 0
-        Me.txtNom.Text = "Nom"
         '
         'txtPrenom
         '
@@ -48,7 +47,6 @@ Partial Class FormCreerUtilisateur
         Me.txtPrenom.Name = "txtPrenom"
         Me.txtPrenom.Size = New System.Drawing.Size(100, 20)
         Me.txtPrenom.TabIndex = 1
-        Me.txtPrenom.Text = "Prénom"
         '
         'txtLogin
         '
@@ -56,7 +54,6 @@ Partial Class FormCreerUtilisateur
         Me.txtLogin.Name = "txtLogin"
         Me.txtLogin.Size = New System.Drawing.Size(100, 20)
         Me.txtLogin.TabIndex = 2
-        Me.txtLogin.Text = "Identifiant"
         '
         'txtMdp
         '
@@ -65,7 +62,6 @@ Partial Class FormCreerUtilisateur
         Me.txtMdp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtMdp.Size = New System.Drawing.Size(100, 20)
         Me.txtMdp.TabIndex = 3
-        Me.txtMdp.Text = "Mot de passe"
         '
         'txtAdresse
         '
@@ -73,7 +69,6 @@ Partial Class FormCreerUtilisateur
         Me.txtAdresse.Name = "txtAdresse"
         Me.txtAdresse.Size = New System.Drawing.Size(100, 20)
         Me.txtAdresse.TabIndex = 4
-        Me.txtAdresse.Text = "Adresse"
         '
         'txtCodePostal
         '
@@ -81,7 +76,6 @@ Partial Class FormCreerUtilisateur
         Me.txtCodePostal.Name = "txtCodePostal"
         Me.txtCodePostal.Size = New System.Drawing.Size(100, 20)
         Me.txtCodePostal.TabIndex = 5
-        Me.txtCodePostal.Text = "Code Postal"
         '
         'txtVille
         '
@@ -89,7 +83,6 @@ Partial Class FormCreerUtilisateur
         Me.txtVille.Name = "txtVille"
         Me.txtVille.Size = New System.Drawing.Size(100, 20)
         Me.txtVille.TabIndex = 6
-        Me.txtVille.Text = "Ville"
         '
         'dtpEmbauche
         '

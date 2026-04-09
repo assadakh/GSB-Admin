@@ -22,7 +22,7 @@
         lblLogo.ForeColor = Color.White
         lblLogo.AutoSize = True
         lblLogo.Left = (sidebar.Width - lblLogo.PreferredWidth) \ 2
-        lblLogo.Top = 30
+        lblLogo.Top = 20
 
         Dim lblSub As New Label()
         lblSub.Text = "Administration"
@@ -30,7 +30,7 @@
         lblSub.ForeColor = Color.FromArgb(180, 200, 230)
         lblSub.AutoSize = True
         lblSub.Left = (sidebar.Width - lblSub.PreferredWidth) \ 2
-        lblSub.Top = 70
+        lblSub.Top = 75
 
         ' ── Séparateur ──
         Dim sep As New Panel()
@@ -63,6 +63,25 @@
         btnCreer.Top = 250
         btnCreer.Tag = "creer"
         AppliquerStyleSidebar(btnCreer)
+
+        ' ── Bouton déconnexion ──
+        Dim btnDeconnexion As New Button()
+        btnDeconnexion.Text = "🚪   Se déconnecter"
+        btnDeconnexion.Size = New Size(220, 50)
+        btnDeconnexion.Left = 0
+        btnDeconnexion.Top = 330
+        btnDeconnexion.BackColor = Color.FromArgb(180, 30, 30)  ' rouge foncé
+        btnDeconnexion.ForeColor = Color.White
+        btnDeconnexion.Font = New Font("Segoe UI", 10)
+        btnDeconnexion.FlatStyle = FlatStyle.Flat
+        btnDeconnexion.FlatAppearance.BorderSize = 0
+        btnDeconnexion.FlatAppearance.MouseOverBackColor = Color.FromArgb(220, 50, 50)
+        btnDeconnexion.TextAlign = ContentAlignment.MiddleLeft
+        btnDeconnexion.Padding = New Padding(15, 0, 0, 0)
+        btnDeconnexion.Cursor = Cursors.Hand
+        AddHandler btnDeconnexion.Click, AddressOf BoutonDeconnexion_Click
+
+        sidebar.Controls.Add(btnDeconnexion)
 
         ' ── Version en bas de sidebar ──
         Dim lblVersion As New Label()
@@ -118,6 +137,26 @@
         frm.MdiParent = Me
         frm.WindowState = FormWindowState.Maximized
         frm.Show()
+    End Sub
+
+    ' Bouton de déconnexion 
+    Private Sub BoutonDeconnexion_Click(sender As Object, e As EventArgs)
+        Dim confirmation = MessageBox.Show(
+        "Voulez-vous vraiment vous déconnecter ?",
+        "Déconnexion",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question)
+
+        If confirmation = DialogResult.Yes Then
+            ' Fermer tous les formulaires enfants
+            For Each enfant As Form In Me.MdiChildren
+                enfant.Close()
+            Next
+            ' Réafficher le formulaire de connexion
+            Dim frmLogin As New FormLogin()
+            frmLogin.Show()
+            Me.Close()
+        End If
     End Sub
 
     ' ── Actions du menu strip (conservé) ──
