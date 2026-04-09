@@ -173,6 +173,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FormCreerUtilisateur.resx">
+      <DependentUpon>FormCreerUtilisateur.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormListeUtilisateurs.resx">
       <DependentUpon>FormListeUtilisateurs.vb</DependentUpon>
     </EmbeddedResource>
