@@ -43,7 +43,7 @@ Public Class FormCreerUtilisateur
         posY += 70
 
         ' Login
-        AjouterLabel(pnl, "Identifiant (login) *", 20, posY)
+        AjouterLabel(pnl, "Identifiant (comportant au maximum 4 caractères) *", 20, posY)
         StylerTextBox(txtLogin, pnl, 20, posY + 22)
         posY += 70
 
