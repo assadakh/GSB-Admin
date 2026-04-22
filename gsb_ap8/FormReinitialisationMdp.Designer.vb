@@ -48,6 +48,7 @@ Partial Class FormReinitialisationMdp
         '
         Me.txtConfirmerMdp.Location = New System.Drawing.Point(97, 293)
         Me.txtConfirmerMdp.Name = "txtConfirmerMdp"
+        Me.txtConfirmerMdp.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtConfirmerMdp.Size = New System.Drawing.Size(100, 20)
         Me.txtConfirmerMdp.TabIndex = 5
         '
